@@ -174,7 +174,7 @@ public class Game {
                 System.out.println("The dragon has been stunned! He does not attack you!\n\n");
             }
 
-            else if(dragon.isDead()){
+            if(dragon.isDead()){
                 deadDragon = true;
                 Dragon.hp = Dragon.level * 50;
                 inventory.addGold();
